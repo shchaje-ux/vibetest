@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개인 브랜딩 홈페이지</title>
+    <meta
+      name="description"
+      content="소개, 이력, 포트폴리오, 취미를 한 페이지에서 볼 수 있는 개인 브랜딩 홈페이지입니다."
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="주요 메뉴">
+      <a class="brand" href="#home">Your Name</a>
+      <nav class="nav-links" aria-label="페이지 섹션">
+        <a href="#about">소개</a>
+        <a href="#career">이력</a>
+        <a href="#portfolio">포트폴리오</a>
+        <a href="#hobby">취미</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home" aria-label="첫 화면">
+        <img
+          class="hero-image"
+          src="assets/brand-hero.png"
+          alt="노트북, 노트, 식물이 놓인 밝은 작업 공간"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal is-visible">
+          <p class="eyebrow">Personal Branding</p>
+          <h1>
+            <span>차분하게 일하고,</span>
+            <span>분명하게 성장합니다.</span>
+          </h1>
+          <p class="hero-copy">
+            기획과 실행 사이를 부드럽게 연결하며, 신뢰할 수 있는 결과를
+            만들어가는 사람입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio">작업 보기</a>
+            <a class="button button-secondary" href="#about">소개 읽기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band section" aria-label="요약 소개">
+        <div class="container intro-grid">
+          <div class="intro-copy reveal">
+            <p class="eyebrow">About Me</p>
+            <h2>넓게 보고, 필요한 것부터 정확히 정리합니다.</h2>
+          </div>
+          <p class="intro-text reveal">
+            이 홈페이지는 자기소개, 주요 이력, 대표 프로젝트, 좋아하는 취미를
+            한 번에 보여주도록 구성했습니다. 각 문장은 짧게, 이미지는 크게
+            배치해 방문자가 자연스럽게 사람의 분위기를 느낄 수 있게 했습니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container two-column">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Profile</p>
+            <h2>나를 소개합니다.</h2>
+          </div>
+          <div class="about-body reveal">
+            <p>
+              안녕하세요. 저는 문제를 차분히 살피고, 복잡한 내용을 이해하기
+              쉬운 형태로 정리하는 일을 좋아합니다. 사람과 일의 맥락을 함께
+              보며, 오래 신뢰받을 수 있는 결과를 만드는 데 집중합니다.
+            </p>
+            <div class="stats-grid" aria-label="주요 정보">
+              <article class="stat-card">
+                <strong>5+</strong>
+                <span>진행 프로젝트</span>
+              </article>
+              <article class="stat-card">
+                <strong>3년</strong>
+                <span>실무 경험</span>
+              </article>
+              <article class="stat-card">
+                <strong>∞</strong>
+                <span>배우는 태도</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section career-section" id="career">
+        <div class="container">
+          <div class="section-heading narrow reveal">
+            <p class="eyebrow">Career</p>
+            <h2>경험은 단순하게, 흐름은 명확하게.</h2>
+            <p>
+              중요한 이력만 골라 한눈에 보이도록 정리했습니다. 회사명, 기간,
+              역할, 성과는 이 영역에서 손쉽게 교체할 수 있습니다.
+            </p>
+          </div>
+          <div class="timeline reveal" aria-label="이력 타임라인">
+            <article class="timeline-item">
+              <span class="timeline-date">2024 - 현재</span>
+              <div>
+                <h3>브랜드 경험 기획</h3>
+                <p>
+                  서비스의 핵심 메시지를 정리하고, 사용자에게 닿는 웹 콘텐츠와
+                  운영 흐름을 설계했습니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2022 - 2024</span>
+              <div>
+                <h3>프로젝트 운영</h3>
+                <p>
+                  일정, 문서, 커뮤니케이션을 관리하며 팀이 안정적으로 결과를
+                  낼 수 있도록 지원했습니다.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-date">2020 - 2022</span>
+              <div>
+                <h3>콘텐츠 제작</h3>
+                <p>
+                  소개 글, 발표 자료, 포트폴리오 콘텐츠를 제작하며 메시지를
+                  선명하게 다듬었습니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Portfolio</p>
+            <h2>대표 작업을 소개합니다.</h2>
+          </div>
+          <div class="portfolio-grid">
+            <article class="project-card reveal">
+              <div class="project-image project-image-one" aria-hidden="true"></div>
+              <div class="project-content">
+                <span>Brand Site</span>
+                <h3>개인 브랜딩 웹사이트</h3>
+                <p>
+                  소개와 이력을 한 페이지에서 자연스럽게 읽을 수 있도록 만든
+                  원페이지 구성입니다.
+                </p>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image project-image-two" aria-hidden="true"></div>
+              <div class="project-content">
+                <span>Planning</span>
+                <h3>서비스 소개 자료</h3>
+                <p>
+                  복잡한 서비스의 장점을 짧은 문장과 명확한 흐름으로 정리한
+                  발표 자료입니다.
+                </p>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-image project-image-three" aria-hidden="true"></div>
+              <div class="project-content">
+                <span>Content</span>
+                <h3>콘텐츠 운영 가이드</h3>
+                <p>
+                  반복 업무를 쉽게 관리할 수 있도록 작성한 문서와 템플릿
+                  모음입니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section hobby-section" id="hobby">
+        <div class="container hobby-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Hobby</p>
+            <h2>일상에서 균형을 찾는 방식.</h2>
+            <p>
+              취미는 사람의 리듬을 보여줍니다. 좋아하는 활동을 짧게 소개해
+              방문자가 더 입체적으로 기억할 수 있게 했습니다.
+            </p>
+          </div>
+          <div class="hobby-list">
+            <article class="hobby-card reveal">
+              <span>01</span>
+              <h3>산책</h3>
+              <p>천천히 걷는 시간 속에서 생각을 정리하고 새로운 아이디어를 얻습니다.</p>
+            </article>
+            <article class="hobby-card reveal">
+              <span>02</span>
+              <h3>사진</h3>
+              <p>빛과 구도를 관찰하며 작은 장면을 오래 기억하는 일을 좋아합니다.</p>
+            </article>
+            <article class="hobby-card reveal">
+              <span>03</span>
+              <h3>독서</h3>
+              <p>좋은 문장을 수집하고, 일과 삶에 적용할 수 있는 관점을 찾습니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section" aria-label="연락 영역">
+        <div class="container contact-inner reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>함께 이야기하고 싶은 일이 있다면 편하게 연락해 주세요.</h2>
+          <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
