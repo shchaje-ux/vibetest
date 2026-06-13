@@ -241,6 +241,7 @@ p {
 
 .intro-band,
 .career-section,
+.method-section,
 .contact-section {
   background: var(--paper);
 }
@@ -269,8 +270,10 @@ p {
 }
 
 .about-section,
+.expertise-section,
 .career-section,
 .portfolio-section,
+.method-section,
 .hobby-section,
 .contact-section {
   padding: clamp(86px, 12vw, 150px) 0;
@@ -318,6 +321,7 @@ p {
 }
 
 .stat-card,
+.feature-card,
 .project-card,
 .hobby-card {
   border: 1px solid rgba(227, 237, 229, 0.95);
@@ -373,6 +377,60 @@ p {
   color: var(--muted);
   font-size: 17px;
   font-weight: 600;
+}
+
+.expertise-section {
+  background: linear-gradient(180deg, #fbfcf8, var(--green-100));
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  min-height: 188px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.feature-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  margin-bottom: 22px;
+  border-radius: 999px;
+  color: #2e4a35;
+  background: rgba(191, 216, 194, 0.5);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.feature-card h3 {
+  font-size: clamp(20px, 2.1vw, 26px);
+}
+
+.feature-card p {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.method-section {
+  border-top: 1px solid var(--green-200);
+  border-bottom: 1px solid var(--green-200);
+}
+
+.method-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.method-card {
+  min-height: 226px;
 }
 
 .portfolio-section {
@@ -549,7 +607,7 @@ p {
 
   .hero {
     min-height: 86svh;
-    padding-top: 150px;
+    padding-top: 190px;
   }
 
   .hero-overlay {
@@ -565,6 +623,8 @@ p {
   }
 
   .stats-grid,
+  .feature-grid,
+  .method-grid,
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
@@ -606,14 +666,17 @@ p {
 
   .intro-band,
   .about-section,
+  .expertise-section,
   .career-section,
   .portfolio-section,
+  .method-section,
   .hobby-section,
   .contact-section {
     padding: 72px 0;
   }
 
   .stat-card,
+  .feature-card,
   .timeline-item,
   .hobby-card,
   .project-content {
